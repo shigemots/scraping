@@ -17,7 +17,7 @@ CSV.open("scrape.csv", "w") do |csv|
     begin
       _html = open(url)
     rescue OpenURI::HTTPError, Errno::ECONNRESET, Errno::ETIMEDOUT
-      pp "ID:#{path} ページないらしい..."
+      pp "ID:#{path} ないわ"
       sleep 1
       next
     end
